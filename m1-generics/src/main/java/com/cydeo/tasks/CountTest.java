@@ -16,7 +16,7 @@ public class CountTest { // QS 2
 
     }
 
-    private static <T> int countIf(List<T> c, UnaryPredicate<T> p){
+    private static <T> int countIf(List<T> c, UnaryPredicate<T> p){ // we should this method generics, in order to use in the different Type....
 
         int count = 0;
 
