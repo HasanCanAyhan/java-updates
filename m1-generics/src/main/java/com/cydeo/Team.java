@@ -3,9 +3,9 @@ package com.cydeo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team <T extends Player >{ // T - can be any class - com.cydeo.SoccerPlayer, com.cydeo.FootballPlayer, BasketballPlayer
+public class Team <T extends Player >{ // T - can be any class - SoccerPlayer, FootballPlayer, BasketballPlayer
     // should accept only PLayer class and subclasses
-    // T is child of com.cydeo.Player
+    // T is child of Player
 
     private String name;
 
