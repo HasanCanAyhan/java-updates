@@ -25,6 +25,9 @@ public class AppleTest {
         // classes implementing interface
         // methods
 
+
+
+
     }
 
     private static List<Apple> filterApples(List<Apple> inventory, ApplePredicate applePredicate){ // interface
