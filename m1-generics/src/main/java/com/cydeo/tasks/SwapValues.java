@@ -15,9 +15,9 @@ public class SwapValues { // QS 1
     }
 
 
-    private static void swap(Integer[] a , int i, int j){
+    private static <T> void swap(T[] a , int i, int j){ // generics method
 
-        Integer temp = a[i];
+        T temp = a[i];
         a[i] = a[j];
         a[j] = temp;
 
