@@ -26,6 +26,8 @@ public class AppleTest {
         // methods
 
 
+        ApplePredicate weightApple = apple -> apple.getWeight() > 200;
+        filterApples(inventory,weightApple);
 
 
     }
