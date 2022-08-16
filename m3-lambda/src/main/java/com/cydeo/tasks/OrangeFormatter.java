@@ -1,4 +1,4 @@
-package com.cydeo;
+package com.cydeo.tasks;
 
 @FunctionalInterface
 public interface OrangeFormatter { // different action
