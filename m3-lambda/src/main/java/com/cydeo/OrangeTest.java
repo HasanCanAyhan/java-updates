@@ -16,6 +16,11 @@ public class OrangeTest {
 
         // accept orange, return String
         OrangeFormatter orangeLambda = orange -> "An orange of " + orange.getWeight() + "g";
+        prettyPrintApple(inventory,orangeLambda);
+
+        System.out.println("---------------------------");
+
+
 
 
     }
