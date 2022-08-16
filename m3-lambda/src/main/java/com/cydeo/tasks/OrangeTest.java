@@ -31,6 +31,10 @@ public class OrangeTest {
 
     }
 
+    // Task
+    //convert to ready functional interface
+
+
     // method accept list and anything implementing Interface
     private static void prettyPrintApple(List<Orange> inventory, OrangeFormatter formatter){
         for (Orange orange : inventory){
