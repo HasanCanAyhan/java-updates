@@ -16,7 +16,6 @@ public class FunctionalInterface {
             }
         };
 
-
          */
 
         // we will choose interface according to Signature (parameter and return type)
