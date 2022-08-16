@@ -20,8 +20,12 @@ public class OrangeTest {
 
         System.out.println("---------------------------");
 
+        OrangeFormatter fancyFormatter = orange -> {
+         String ch = orange.getWeight() > 200 ? "Heavy" : "Light";
+         return "A " + ch + " " + orange.getColor() + " orange";
+        };
 
-
+        prettyPrintApple(inventory,fancyFormatter);
 
     }
 
