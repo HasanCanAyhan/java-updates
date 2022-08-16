@@ -1,5 +1,7 @@
 package com.cydeo;
 
+import java.util.function.Predicate;
+
 public class FunctionalInterface {
 
     public static void main(String[] args) {
@@ -21,7 +23,9 @@ public class FunctionalInterface {
 
         //************PREDICATE************
 
+        Predicate<Integer> lesserThan = i -> i < 18; // implementation of the method in the Predicate Interface
 
+        System.out.println(lesserThan.test(20)); // false
 
 
 
