@@ -16,10 +16,10 @@ public class MemberTest {
         List<Person> personList = Arrays.asList(p1,p2,p3,p4);
 
         CheckMember checkMember = p -> p.getGender() == Gender.MALE && p.getAge() >=  18 && p.getAge() <= 25;
-
+        // that is the implementation
         print(personList, checkMember);
 
-        //print(personList,p -> p.getGender() == Gender.MALE && p.getAge() >=  18 && p.getAge() <= 25 );
+        //print(personList,p -> p.getGender() == Gender.MALE && p.getAge() >=  18 && p.getAge() <= 25 ); the same thing
 
 
     }
