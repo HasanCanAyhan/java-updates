@@ -14,9 +14,18 @@ public class OrangeTest {
         inventory.add(new Orange(200,Color.GREEN));
         inventory.add(new Orange(50,Color.RED));
 
+        // accept orange, return String
+        OrangeFormatter orangeLambda = orange -> "An orange of " + orange.getWeight() + "g";
 
 
+    }
 
+    // method accept list and anything implementing Interface
+    private static void prettyPrintApple(List<Orange> inventory, OrangeFormatter formatter){
+        for (Orange orange : inventory){
+            String output = formatter.accept(orange);
+            System.out.println(output);
+        }
     }
 
 
