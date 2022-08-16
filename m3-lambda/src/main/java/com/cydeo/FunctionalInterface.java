@@ -23,10 +23,10 @@ public class FunctionalInterface {
 
         //************PREDICATE************
 
+        // boolean test(T t); ready method
         Predicate<Integer> lesserThan = i -> i < 18; // implementation of the method in the Predicate Interface
 
         System.out.println(lesserThan.test(20)); // false
-
 
 
 
