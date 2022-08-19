@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 public class DishTask {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Task2
 
         //Print all dish`s name that has less than 400 calories
 
