@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-       //Predicate<Integer> pred = (p) -> p % 2 == 0 ? true : false; // the implementation of abstract method inside the Functional Interface
+       //Predicate<Integer> pred = (p) -> p % 2 == 0 ? true : false; // the implementation of abstract method belongs to the Functional Interface
 
         Calculate sum = (x,y) -> System.out.println(x +y);
 
