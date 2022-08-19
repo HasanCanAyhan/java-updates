@@ -35,8 +35,8 @@ public class DishTask {
 
         DishData.getAll().stream()
                 .filter(p -> p.getCalories() < 400)
-                .sorted( Comparator.comparing( Dish::getCalories  )  )
-                .forEach(System.out::println);
+                .sorted(Comparator.comparing( Dish::getCalories  ) )
+                .forEach(p -> System.out.println(p.getName()));
 
 
     }
