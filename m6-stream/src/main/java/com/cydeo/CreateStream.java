@@ -1,11 +1,12 @@
 package com.cydeo;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class Main {
+public class CreateStream {
+
+
 
     public static void main(String[] args) {
 
@@ -26,9 +27,13 @@ public class Main {
           new Course("MS",102)
         );
 
+        // Source->Filter->Sort->Map->Collect : Source will not be changed!!
+
         Stream<Course> myCourseStream = myCourses.stream(); // each flow in the Stream
 
-        //operations
+        //creating Stream Values
+        Stream<Integer> stream = Stream.of(1,2,3,4);
+
 
 
 
