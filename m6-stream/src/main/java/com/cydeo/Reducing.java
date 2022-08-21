@@ -45,6 +45,12 @@ public class Reducing {
         System.out.println("max = " + max.get());
         System.out.println("sum = " + sum.get());
 
+        System.out.println("-------------------------------------------");
+
+        System.out.println("Count : ");
+
+        long dishCount = DishData.getAll().stream().count(); // it counts how many object inside stream
+        System.out.println(dishCount);
 
 
 
