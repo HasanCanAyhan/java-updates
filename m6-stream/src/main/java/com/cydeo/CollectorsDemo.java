@@ -2,6 +2,7 @@ package com.cydeo;
 
 import com.cydeo.tasks.Dish;
 import com.cydeo.tasks.DishData;
+import com.cydeo.tasks.Type;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -94,13 +95,42 @@ public class CollectorsDemo {
         //joining() : is used to join various elements of a character or String array into a single object
 
         //like concat
-        System.out.println("joining() : is used to join various elements of a character or String array into a single object\n");
+        System.out.println("joining() : is used to join various elements of a character or String array into a single object");
 
         List<String> courses = Arrays.asList("Java","JS","TS");
         String str = courses.stream()
                 .collect(Collectors.joining(","));
 
         System.out.println("str = " + str);
+
+        System.out.println("----------------------------------------------------");
+
+        System.out.println("---------------partitioningBy()----------------------------------------");
+
+        //not so much
+        //grouping based on the boolean
+        //always key is Boolean
+        //partitioningBy() : is used to partition a stream of objects (or a set of elements(based on a given predicate))
+
+        System.out.println("partitioningBy() : is used to partition a stream of objects (or a set of elements(based on a given predicate))");
+
+        Map<Boolean,List<Dish>> veggieDish  = DishData.getAll().stream()
+                .collect(Collectors.partitioningBy(Dish::isVegetarian)); // key is Boolean , value is List<Dish>
+
+        System.out.println("veggieDish = " + veggieDish);
+
+        System.out.println("----------------------------------------------------");
+
+        System.out.println("---------------groupingBy()----------------------------------------");
+
+        //groupingBy() : is used for grouping objects by some property and storing results in a Map instance
+        //but here key cn be different
+        // based on the Type we are grouping
+
+        Map<Type,List<Dish>> dishType = DishData.getAll().stream()
+                .collect(Collectors.groupingBy(Dish::getType));
+
+        System.out.println("dishType = " + dishType);
 
     }
 
