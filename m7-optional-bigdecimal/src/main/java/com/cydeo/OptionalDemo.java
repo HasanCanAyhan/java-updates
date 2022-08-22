@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
-public class OptionalDemo {
+public class OptionalDemo { // preventing NullPointerException
 
     public static void main(String[] args) {
 
@@ -20,14 +20,23 @@ public class OptionalDemo {
 
         System.out.println(Optional.of(number).isPresent()); // true
 
-        System.out.println(empty.get());
-
+        System.out.println("-----------------------------------------------------------");
 
         // ifPresent
-
         Optional<Integer> bigNumber = number.stream()
                 .filter(x -> x > 100).findAny();
+        bigNumber.ifPresent(System.out::println);
 
+        System.out.println("-----------------------------------------------------------");
+
+        //get
+        //System.out.println(bigNumber.get());
+
+        System.out.println("-----------------------------------------------------------");
+
+        //orElse
+
+        System.out.println(bigNumber.orElse(5));
 
     }
 
