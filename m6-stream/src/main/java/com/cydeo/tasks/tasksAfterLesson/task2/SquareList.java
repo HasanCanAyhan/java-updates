@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class SquareList {
+public class SquareList { // page 7
     public static void main(String[] args) {
 
 
