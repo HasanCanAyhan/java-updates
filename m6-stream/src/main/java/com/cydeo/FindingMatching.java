@@ -59,8 +59,8 @@ public class FindingMatching {
 
         System.out.println("with stream");
 
-        Optional<String> findFirst2 = list1.parallelStream().filter(s -> s.startsWith("D")).findFirst();
-        Optional<String> findAny2 = list2.parallelStream().filter(s -> s.startsWith("J")).findAny();
+        Optional<String> findFirst2 = list1.stream().filter(s -> s.startsWith("D")).findFirst();
+        Optional<String> findAny2 = list2.stream().filter(s -> s.startsWith("J")).findAny();
 
         System.out.println("findAny2 = " + findAny2.get());
         System.out.println("findFirst2 = " + findFirst2.get());
