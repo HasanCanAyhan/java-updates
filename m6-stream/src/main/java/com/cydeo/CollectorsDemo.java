@@ -11,6 +11,8 @@ public class CollectorsDemo {
 
     public static void main(String[] args) {
 
+        //utility class means static methods called through ClassName
+
         //toCollection(Supplier)
         List<Integer> numbers = Arrays.asList(3,4,5,6,6,7);
 
@@ -124,7 +126,7 @@ public class CollectorsDemo {
         System.out.println("---------------groupingBy()----------------------------------------");
 
         //groupingBy() : is used for grouping objects by some property and storing results in a Map instance
-        //but here key cn be different
+        //but here key can be different
         // based on the Type we are grouping
 
         Map<Type,List<Dish>> dishType = DishData.getAll().stream()
