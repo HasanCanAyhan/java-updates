@@ -14,17 +14,19 @@ public class TeeingDemo {
                 new Employee(4,"D",400)
         );
 
-        employeeList.stream().collect(Collectors.teeing(
-                Collectors.maxBy(Comparator.comparing(Employee::getSalary)),
-                Collectors.minBy(Comparator.comparing(Employee::getSalary)),
+        HashMap<String,Employee> result = employeeList.stream().collect(Collectors.teeing( // getting 2 collectors
+                Collectors.maxBy(Comparator.comparing(Employee::getSalary)),// downstream1
+                Collectors.minBy(Comparator.comparing(Employee::getSalary)),// downstream2
                 (e1,e2) -> {
                     HashMap<String,Employee> map = new HashMap<>();
                     map.put("MAX " , e1.get());
                     map.put("MIN " , e2.get());
                     return map;
                 }
+
         ));
 
+        System.out.println(result);
 
 
     }
