@@ -1,6 +1,7 @@
 package com.cydeo.java12;
 
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class TeeingDemo {
@@ -27,7 +28,6 @@ public class TeeingDemo {
         ));
 
         System.out.println(result);
-
 
     }
 
