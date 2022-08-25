@@ -22,6 +22,14 @@ public class TextBlocksDemo {
 
         System.out.println(address2);
 
+
+        var names = """
+                
+                Can - Ayhan - Edu - John - Gandalf 
+                
+                """;
+        System.out.println(names);
+
     }
 
 }
